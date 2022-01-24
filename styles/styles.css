@@ -9,16 +9,21 @@
   --grid-cols: 1;
 }
 
+button {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem;
+}
+
 .container {
   display: grid;
   grid-template-rows: repeat(var(--grid-rows), 1fr);
   grid-template-columns: repeat(var(--grid-cols), 1fr);
-  gap: 1em;
-  padding: 1em;
+  width: 45rem;
+  height: 45rem;
+  margin: auto;
 }
 
 .container div {
   border: 1px solid gray;
-  text-align: center;
-  padding: 1em;
 }
